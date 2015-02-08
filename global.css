@@ -11,12 +11,12 @@
   h1 { text-align: center; font-size: 30px; }
   h2 { text-align: center; font-size: 15px; }
   h3 {font-size: 15px;}
-  div{ background: #58ACFA;opacity: 0.5;}
-  div1{ background: #000000;}
+  div{ background: #58ACFA;opacity: 0.5;border: black 3px solid; }
+  div1{ background: #000000;border: black 3px solid; }
+  fin{ text-align: bottom; font-family: cursive; font-size: 15px;}
   #converted {
 	font: small-caps 100%/200% serif;	
 	font-family: cursive;
 	font-weight: bold;
-	color: #0B610B;
-
-}
+	color: #D0FA58;
+  }
