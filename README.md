@@ -1,4 +1,4 @@
-# Practica 1. Conversor de temperatura. #
+# Practica 1. Conversor de temperatura con Karma. #
 
 Nota: esta pagina ha sido desarrollada usando Marckdown.
 --------------------------------------------------------
@@ -6,6 +6,7 @@ Nota: esta pagina ha sido desarrollada usando Marckdown.
 ### ***temperature.js***
 
 Aplicacion javascript para la conversion de temperaturas.
+Cubrimiento de pruebas con Blanket.js. Travis y Karma
 
 > Ej: 32F = 0.0 Celsius
 
