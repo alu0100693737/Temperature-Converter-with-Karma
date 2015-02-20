@@ -1,4 +1,4 @@
-# Practica 1. Conversor de temperatura con Karma. #
+# Practica 2. Conversor de temperatura con Karma. #
 
 Nota: esta pagina ha sido desarrollada usando Marckdown.
 --------------------------------------------------------
