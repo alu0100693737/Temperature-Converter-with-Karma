@@ -1,8 +1,13 @@
-var static = require('node-static');
-var fileServer = new static.Server('./');
-console.log("Visit http://localhost:8080/test.html")
-require('http').createServer(function (request, response) {
-request.addListener('end', function () {
-fileServer.serve(request, response);
-}).resume();
-}).listen(8080);
+var http = require('http');
+
+var finalhandler = require('finalhandler');
+var serveStatic = require('serve-static');
+
+var serve = serveStatic("./");
+
+var server = http.createServer(function(req, res){
+  var done = finalhandler(req, res)
+  serve(req, res, done)
+});
+
+server.listen(8000);
