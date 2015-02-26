@@ -18,13 +18,13 @@ module.exports = function(config) {
      },
      
      preprocessors: {
-          'tests/index.html': ['html2js']
+          'vendor/index.html': ['html2js']
     },
      
     // list of files / patterns to load in the browser
     files: [
-            'tests/index.html',
-            'tests/*.js',
+            'vendor/index.html',
+            'vendor/*.js',
             'temperature.js'
     ],
 
@@ -65,7 +65,7 @@ module.exports = function(config) {
     // - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-    browsers: ['Firefox'],
+    browsers: ['firefox'],
 
 
     // If browser does not capture in given timeout [ms], kill it

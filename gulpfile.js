@@ -9,28 +9,18 @@ var minifyHTML = require('gulp-minify-html');
 var minifyCSS  = require('gulp-minify-css');
 
 
-gulp.task('default', function() {
-  gulp.src([])
-    .pipe(karma({
-      configFile: 'karma.conf.js',
-      action: 'watch'
-    }));
-});
-
-
-
-gulp.task('test', function () {
+gulp.task('minify', function () {
   gulp.src('temperature.js')
   .pipe(uglify())
   .pipe(gulp.dest('minified'));
 
-  gulp.src('./index.html')
-    .pipe(minifyHTML())
-    .pipe(gulp.dest('./minified/'))
+gulp.src('./index.html')
+  .pipe(minifyHTML())
+  .pipe(gulp.dest('./minified/'))
 
-  gulp.src('./*.css')
-   .pipe(minifyCSS({keepBreaks:true}))
-   .pipe(gulp.dest('./minified/'))
+gulp.src('./*.css')
+  .pipe(minifyCSS({keepBreaks:true}))
+  .pipe(gulp.dest('./minified/'))
 });
 
 gulp.task('clean', function(cb) {
